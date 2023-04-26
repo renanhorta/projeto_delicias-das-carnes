@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Contato</title>
+</head>
+
+<body id="bodyContato">
+
+  <header>
+    <nav>
+      <a id="logo" href="index.html">
+        <img src="./img/logo.png" alt="Logo delicias das carnes">
+      </a>
+
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="index.html">Carnes</a>
+        </li>
+        <li>
+          <a href="index.html">Quem Somos</a>
+        </li>
+        <li>
+          <a href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="mainContato">
+
+    <div id="modalForm">
+      <h3>Entre em contato com a nossa equipe.</h3>
+
+      <section id="formulario01">
+
+        <form id="formulario">
+
+          <input type="text" id="nome" name="nome" placeholder="Nome"><br>
+
+          <input type="text" id="email" name="email" placeholder="E-mail"><br>
+
+          <input type="text" id="telefone" name="telefone" placeholder="Telefone"><br>
+        </form>
+
+      </section>
+
+      <section id="formulario02">
+
+        <p>Preferência de Carnes</p>
+
+        <div id="containerRadio">
+
+          <div>
+            <div class="radio"></div>
+            <span>Carnes Exóticas</span>
+          </div>
+
+          <div>
+            <div class="radio"></div>
+            <span>Carnes tradicionais</span>
+          </div>
+
+          <div>
+            <div class="radio"></div>
+            <span>Ambas</span>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="formulario03">
+
+        <div id="inputSelect" onclick="validarSelect()">
+          <span id="texto">Carne Favorita</span>
+          <img src="./img/seta.png" alt="seta" id="imgSeta">
+        </div>
+
+        <div id="dropDown" class="hidden">
+          <div class="item">Bovina</div>
+          <div class="item">Suína</div>
+          <div class="item">Aves</div>
+          <div class="item">Frutos do Mar</div>
+        </div>
+
+      </section>
+
+      <section id="formulario04">
+
+        <p>Preferencia de contato</p>
+
+        <section>
+          <div id="boxTodos" class="checkbox" onclick="marcar(this)">
+            <i id="checkPai" class="fa-solid fa-x fa-2xs fa-lg invisivel"></i>
+            <i id="checkInt" class="fa-solid fa-equals fa-2xs fa-lg invisivel"></i>
+          </div>
+          <span>Todos os meios</span>
+        </section>
+
+        <section>
+          <div id="box1" class="checkbox" onclick="marcar(this)">
+            <i id="marcada1" class="fa-solid fa-x fa-2xs fa-lg invisivel"></i>
+          </div>
+          <span>E-mail</span>
+        </section>
+
+        <section>
+          <div id="box2" class="checkbox" onclick="marcar(this)">
+            <i id="marcada2" class="fa-solid fa-x fa-2xs fa-lg invisivel"></i>
+          </div>
+          <span>SMS</span>
+        </section>
+
+      </section>
+
+      <section id="formulario05">
+
+        <p>Envie uma mensagem</p>
+        <textarea id="mensagem" rows="4" cols="50" name="mensagem" form="formulario"></textarea><br>
+
+      </section>
+
+      <section id="formulario06">
+
+        <button id="btnEnviarFormulario" onclick="enviar()">Enviar formulário!</button>
+
+
+      </section>
+    </div>
+
+    <div id="modal" class="modalHidden">
+    </div>
+  </main>
+
+  <footer>
+    <div id="conteinerFooter">
+      <img src="./img/logo.png" alt="Logo delicias das carnes">
+      <span>
+        O açougue com mais de 40 anos de história e sabores.
+      </span>
+
+      <div>
+        <h2>Ganhe 20% de desconto no
+          primeiro pedido!
+        </h2>
+        <a id="aLinkFooter" href="https://www.whatsapp.com" target="_blank">Peça Já!</a>
+      </div>
+    </div>
+
+    <div id="listaFooter">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="index.html">Carnes</a>
+        </li>
+        <li>
+          <a href="index.html">Quem Somos</a>
+        </li>
+        <li>
+          <a href="contato.html">Contato</a>
+        </li>
+      </ul>
+
+
+      <ul id="listaIcone">
+        <li>Redes Sociais</li>
+        <li>
+          <ul>
+            <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-lg"
+                  style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp fa-lg"
+                  style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook fa-lg"
+                  style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>Desenvolvido por Renan Horta - 2023</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
