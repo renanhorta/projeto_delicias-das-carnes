@@ -15,4 +15,4 @@ Delicias das Carnes
 ## Getting started
 
 <a href="">Nesse Link</a> você pode acessar o site do projeto.<br><br><br>
-<a href="">Nesse link</a> você pode acessar o site do açougue que foi baseado para o projeto.<br>
+<a href="https://deliciasdacarn8.wixsite.com/meusite">Nesse link</a> você pode acessar o site do açougue que foi baseado para o projeto.<br>
